@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Walkability — WalkSmart</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">WalkSmart</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="walkability.html" aria-current="page">Walkability</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero reveal">
+      <img src="images/walkability-map.jpg" alt="Walkability map" class="section-img" loading="lazy">
+      <h1 class="section-title">Walkability — Key Concepts</h1>
+      <p class="lead">Walkability measures how friendly an area is for walking: safety, comfort, convenience and access to destinations.</p>
+    </section>
+
+    <section class="two-col reveal">
+      <article>
+        <h2>Measurements</h2>
+        <ul class="checklist">
+          <li>Connectivity — block lengths & intersection density</li>
+          <li>Diversity — mix of uses within walking distance</li>
+          <li>Density — people & activities per area</li>
+          <li>Safety — vehicle speeds, visibility & lighting</li>
+        </ul>
+      </article>
+      <aside>
+        <h3>Tools & Metrics</h3>
+        <p>Walk Score, pedestrian audits and simple counts can quantify walkability for class exercises.</p>
+        <p class="muted">Tip: measure one street's crossings, sidewalk width and nearby amenities for a short demo.</p>
+      </aside>
+    </section>
+
+    <section class="section reveal">
+      <h2 class="section-title">Walk Audit — Simple Checklist</h2>
+      <ol id="auditChecklist" class="checklist">
+        <li>Are sidewalks continuous and wide enough?</li>
+        <li>Are crossings frequent and well marked?</li>
+        <li>Is there shade and seating?</li>
+        <li>Are vehicle speeds calm (≤30 km/h)?</li>
+        <li>Are destinations within 10–15 minute walk?</li>
+      </ol>
+      <button id="downloadChecklist" class="btn">Save Checklist (txt)</button>
+    </section>
+
+    <section class="section reveal">
+      <h2 class="section-title">Short Case Study</h2>
+      <p>Low-cost changes — curb extensions, extra trees, clearer crosswalks and pop-up parks — often increase foot traffic and local sales.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year2"></span> WalkSmart</div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

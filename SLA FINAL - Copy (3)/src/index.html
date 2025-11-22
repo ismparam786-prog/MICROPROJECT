@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WalkSmart — City Walkability</title>
+  <meta name="description" content="WalkSmart — sustainable cities and walkability. Practical tips, audits and resources." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">WalkSmart</a>
+      <nav id="mainNav" class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="walkability.html">Walkability</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal">
+      <picture>
+        <source media="(min-width:700px)" >
+       <img src="hero1.jpg" alt="Calm city street with trees" class="hero-img" loading="lazy">
+      </picture>
+
+      <div class="hero-inner container">
+        <h1>Designing Cities for People</h1>
+        <p class="lead">Small design choices create safer, greener and more connected neighbourhoods.</p>
+        <div class="hero-cta">
+          <a class="btn" href="walkability.html">Learn About Walkability</a>
+          <a class="btn ghost" href="resources.html#audit">Checklist</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container features reveal" aria-label="Key features">
+      <h2 class="section-title">What makes a walkable city?</h2>
+
+      <div class="filters">
+        <label class="sr-only" for="filterSelect">Filter features</label>
+        <select id="filterSelect" class="select" aria-label="Filter features">
+          <option value="all">All</option>
+          <option value="design">Design</option>
+          <option value="safety">Safety</option>
+          <option value="amenities">Amenities</option>
+          <option value="greenspace">Greenspace</option>
+        </select>
+      </div>
+
+      <div class="cards" id="cards">
+        <article class="card reveal" data-category="design" tabindex="0">
+          <img class="card-img" src="connectedstreets.jpg" alt="Connected streets" loading="lazy">
+          <h3>Connected Streets</h3>
+          <p>Short blocks, frequent intersections and pedestrian shortcuts reduce walking distance and improve access.</p>
+          <button class="read-more" data-id="m1">More</button>
+        </article>
+
+        <article class="card reveal" data-category="safety" tabindex="0">
+          <img class="card-img" src="crosswalks.jpg" alt="Safe crosswalk" loading="lazy">
+          <h3>Safety & Lighting</h3>
+          <p>Calm traffic, clear crossings and good lighting increase perceived safety and real safety.</p>
+          <button class="read-more" data-id="m2">More</button>
+        </article>
+
+        <article class="card reveal" data-category="amenities" tabindex="0">
+          <img class="card-img" src="resources-1.jpg" alt="Local amenities" loading="lazy">
+          <h3>Local Amenities</h3>
+          <p>Shops, transit and parks within a short walk replace car trips and enliven streets.</p>
+          <button class="read-more" data-id="m3">More</button>
+        </article>
+
+        <article class="card reveal" data-category="greenspace" tabindex="0">
+          <img class="card-img" src="greenery.jpg.jfif" alt="Street trees and pocket park" loading="lazy">
+          <h3>Green & Shade</h3>
+          <p>Trees, seating and rain-friendly design make walking comfortable year-round.</p>
+          <button class="read-more" data-id="m4">More</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="container stats reveal">
+      <h2 class="section-title">Quick facts</h2>
+      <div class="stats-grid">
+        <div class="stat card-soft">
+          <h3 id="stat1">—</h3>
+          <p>Minutes saved per commute (avg.)</p>
+        </div>
+        <div class="stat card-soft">
+          <h3 id="stat2">—</h3>
+          <p>Walkable neighbourhoods (demo)</p>
+        </div>
+        <div class="stat card-soft">
+          <h3 id="stat3">—</h3>
+          <p>Transit access within 10 min</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container cta reveal">
+      <div class="cta-inner">
+        <div>
+          <h2>Start a Neighbourhood Walk Audit</h2>
+          <p class="muted">Simple steps you can apply today — observe, record, recommend.</p>
+        </div>
+        <div>
+          <a class="btn" href="resources.html#audit">Download Checklist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> WalkSmart</div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="walkability.html">Walkability</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

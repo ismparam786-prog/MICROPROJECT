@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — WalkSmart</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">WalkSmart</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="walkability.html">Walkability</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero reveal">
+      <img src="images/contact.jpg" alt="Community meeting" class="section-img" loading="lazy">
+      <h1 class="section-title">Get in touch</h1>
+      <p class="lead">Share a project idea or ask for help with a walk audit in your area.</p>
+    </section>
+
+    <section class="section contact-section reveal">
+      <form id="contactForm" class="contact-form" novalidate>
+        <label>
+          Name
+          <input type="text" id="name" required minlength="2" />
+        </label>
+
+        <label>
+          Email
+          <input type="email" id="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea id="message" required rows="5"></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+          <button type="reset" class="btn ghost">Reset</button>
+        </div>
+        <p id="formMsg" class="muted" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div>© <span id="year4"></span> WalkSmart</div>
+        <div class="footer-subtitle">City Walkability Project — SAKEC</div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="walkability.html">Walkability</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-team">
+        <span>Designed by</span>
+        <a href="https://www.linkedin.com/in/param-patel-6a5568392/?hl=en" target="_blank" rel="noopener">Param</a>
+        <a href="https://www.linkedin.com/in/kunjal-panchal-050580386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">Kunjal</a>
+        <a href="https://in.linkedin.com/in/hemi-patel-642591392/?hl=en"target="_blank" rel="noopener">Hemi</a>
+        <a href="https://www.linkedin.com/in/yashshree-parab-b28820380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">Yashshree</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

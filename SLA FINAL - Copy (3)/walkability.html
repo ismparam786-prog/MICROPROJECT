@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Walkability — WalkSmart</title>
+  <meta name="description" content="Interactive walkability concepts, checklist, demo and mini-quiz." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">WalkSmart</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="walkability.html" aria-current="page">Walkability</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero reveal">
+      <img src="images/walkability-map.jpg" alt="Walkability map" class="section-img" loading="lazy">
+      <h1 class="section-title">Walkability — Key Concepts</h1>
+      <p class="lead">Walkability measures how friendly an area is for walking: safety, comfort, convenience and access to destinations.</p>
+    </section>
+
+    <section class="two-col reveal walkability-measurements" aria-labelledby="measurementsHeading">
+      <article>
+        <h2 id="measurementsHeading">Measurements</h2>
+
+        <!-- measurement cards (interactive + hover details + progress meters) -->
+        <div class="meas-grid">
+          <div class="meas-card" data-id="m1">
+            <div class="meas-head">
+              <div class="meas-icon" aria-hidden>
+                <!-- icon svg -->
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7h18M3 12h18M3 17h18M8 3v18M16 3v18" stroke="#dfffe6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <div class="meas-title">Connectivity</div>
+                <div class="meas-sub">block lengths &amp; intersection density</div>
+              </div>
+            </div>
+            <div class="meas-body">Short blocks and multiple route options reduce walking distance and improve route choice.</div>
+            <div class="meter" aria-hidden><i style="width:72%"></i></div>
+            <div class="extra" data-tooltip="Short blocks, grids & mid-block crossings">72%</div>
+            <button class="read-more" data-id="m1">More</button>
+          </div>
+
+          <div class="meas-card" data-id="m2">
+            <div class="meas-head">
+              <div class="meas-icon" aria-hidden>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 12h18M12 3v18" stroke="#dfffe6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <div class="meas-title">Safety</div>
+                <div class="meas-sub">vehicle speeds, visibility &amp; lighting</div>
+              </div>
+            </div>
+            <div class="meas-body">Calm vehicle speeds, good sightlines and lighting make walking feel safe day and night.</div>
+            <div class="meter" aria-hidden><i style="width:56%"></i></div>
+            <div class="extra" data-tooltip="Traffic calming & lighting">56%</div>
+            <button class="read-more" data-id="m2">More</button>
+          </div>
+
+          <div class="meas-card" data-id="m3">
+            <div class="meas-head">
+              <div class="meas-icon" aria-hidden>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 20h16M4 4h16M8 4v16M16 4v16" stroke="#dfffe6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <div class="meas-title">Diversity</div>
+                <div class="meas-sub">mix of uses within walking distance</div>
+              </div>
+            </div>
+            <div class="meas-body">A mix of housing, shops, offices and services within a short walk increases everyday walking.</div>
+            <div class="meter" aria-hidden><i style="width:64%"></i></div>
+            <div class="extra" data-tooltip="Shops, transit, parks nearby">64%</div>
+            <button class="read-more" data-id="m3">More</button>
+          </div>
+
+          <div class="meas-card" data-id="m4">
+            <div class="meas-head">
+              <div class="meas-icon" aria-hidden>
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="#dfffe6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <div class="meas-title">Green &amp; Shade</div>
+                <div class="meas-sub">trees, shade &amp; comfort</div>
+              </div>
+            </div>
+            <div class="meas-body">Trees and seating improve thermal comfort and encourage walking outdoors.</div>
+            <div class="meter" aria-hidden><i style="width:48%"></i></div>
+            <div class="extra" data-tooltip="Trees & benches">48%</div>
+            <button class="read-more" data-id="m4">More</button>
+          </div>
+        </div>
+
+        <!-- accordion tips -->
+        <div class="accordion" aria-hidden="false">
+          <div class="acc-item">
+            <div class="acc-head" tabindex="0">
+              <h4>Quick Tips — Small changes, big results</h4>
+              <span class="acc-arrow">▸</span>
+            </div>
+            <div class="acc-body">
+              <p>Shorten crossing distances with curb extensions, add trees and seating, reduce car speeds and mark crossings — low-cost changes that make big differences.</p>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <aside>
+        <h3>Tools & Metrics</h3>
+        <p>Walk Score, pedestrian audits and simple counts can quantify walkability for class exercises.</p>
+        <p class="muted">Tip: measure one street's crossings, sidewalk width and nearby amenities for a short demo.</p>
+
+        <div class="mini-demo" aria-hidden="false">
+          <div class="demo-canvas" id="demoMap">
+            <div class="canvas-title">Demo: Street snapshot</div>
+            <svg width="100%" height="120" viewBox="0 0 300 120" preserveAspectRatio="none" aria-hidden="true">
+              <rect x="0" y="0" width="300" height="120" fill="#0c1513" rx="8"/>
+              <rect x="8" y="10" width="48" height="100" fill="#0b2a23" rx="6"/>
+              <rect x="244" y="10" width="48" height="100" fill="#0b2a23" rx="6"/>
+              <rect x="64" y="28" width="172" height="64" fill="#122525" rx="6"/>
+              <rect x="128" y="28" width="8" height="64" fill="#f3f3f3"/>
+              <rect x="164" y="28" width="8" height="64" fill="#f3f3f3"/>
+            </svg>
+            <small class="muted">Click "Run Demo" to estimate sidewalk width, crossings & amenity count for sample street.</small>
+            <div style="margin-top:8px">
+              <button id="runDemo" class="btn">Run Demo</button>
+              <button id="resetDemo" class="btn ghost">Reset</button>
+            </div>
+            <div id="demoOutput" style="margin-top:8px;color:#cbded5;font-size:14px"></div>
+          </div>
+
+          <div class="demo-canvas">
+            <div class="canvas-title">Quick Quiz</div>
+            <div class="quiz">
+              <label><input type="radio" name="q1" value="yes"> Are sidewalks continuous?</label>
+              <label><input type="radio" name="q2" value="yes"> Are crossings frequent?</label>
+              <label><input type="radio" name="q3" value="yes"> Are destinations within 15 mins?</label>
+              <div style="margin-top:8px"><button id="quizSubmit" class="btn">Submit</button></div>
+              <div id="quizResult" style="margin-top:8px;color:#cbded5"></div>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </section>
+
+    <section class="section reveal">
+      <h2 class="section-title">Walk Audit — Interactive Checklist</h2>
+      <ol id="auditChecklist" class="checklist">
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Are sidewalks continuous, wide, and barrier-free?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Are crossings frequent, safe, and well-marked?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Is there shade and seating?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Is there seating and resting spots?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Are vehicle speeds calm (≤30 km/h)?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Are daily destinations within a comfortable 10–15 minute walk?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Is the area well-lit for evening or early-morning walking?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Are pedestrian signs, signals, and wayfinding easy to understand?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Is the walking environment clean and well-maintained?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Are there trees, greenery, or pleasant surroundings?</span></li>
+        <li><button class="check-toggle" aria-pressed="false"></button><span class="check-text">Is the walking experience comfortable, safe, and enjoyable overall?</span></li>
+      </ol>
+
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+        <button id="downloadChecklist" class="btn">Save Checklist (txt)</button>
+        <button id="shareChecklist" class="btn ghost">Copy Summary</button>
+        <button id="resetChecklist" class="btn ghost">Reset Selections</button>
+      </div>
+    </section>
+
+   
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div>© <span id="year2"></span> WalkSmart</div>
+        <div class="footer-subtitle">City Walkability Project — SAKEC</div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="walkability.html">Walkability</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer-team">
+        <span>Designed by</span>
+        <a href="https://www.linkedin.com/in/param-patel-6a5568392/?hl=en" target="_blank" rel="noopener">Param</a>
+        <a href="https://www.linkedin.com/in/kunjal-panchal-050580386?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">Kunjal</a>
+        <a href="https://in.linkedin.com/in/hemi-patel-642591392/?hl=en" target="_blank" rel="noopener">Hemi</a>
+        <a href="https://www.linkedin.com/in/yashshree-parab-b28820380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">Yashshree</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared modal (exists across pages) -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content" role="document">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">✕</button>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
